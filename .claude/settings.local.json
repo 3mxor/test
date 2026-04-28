@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(grep -E \"\\\\.\\(liquid|css|json\\)$\")",
-      "Bash(python -)"
+      "Bash(python -)",
+      "PowerShell(python \"c:\\\\Users\\\\pc\\\\Downloads\\\\theme_export__zayanae-myshopify-com-horizon__27APR2026-0916pm\\\\update_theme.py\")"
     ]
   }
 }

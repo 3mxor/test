@@ -15,18 +15,18 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p>Browse our latest products</p>",
+            "text": "<h1>Where Light<br>Meets Gold</h1>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
+            "type_preset": "h1",
+            "font": "var(--font-heading--family)",
+            "font_size": "clamp(2.8rem, 6vw, 5.5rem)",
+            "line_height": "tight",
+            "letter_spacing": "-0.02em",
             "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground-heading)",
+            "wrap": "balance",
+            "color": "#ffffff",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -41,20 +41,74 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
-            "label": "Shop all",
+            "label": "Explore Collection",
             "link": "shopify://collections/all",
             "open_in_new_tab": false,
-            "style_class": "button-secondary",
+            "style_class": "button-primary",
             "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "fit-content",
             "custom_width_mobile": 100
           },
           "blocks": {}
+        },
+        "eyebrow_lux": {
+          "type": "text",
+          "name": "Eyebrow",
+          "settings": {
+            "text": "<p>Spring Collection 2026</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "0.68rem",
+            "line_height": "normal",
+            "letter_spacing": "0.22em",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "color": "#C9A84C",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 8,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "subtitle_lux": {
+          "type": "text",
+          "name": "Subtitle",
+          "settings": {
+            "text": "<p>Handcrafted fine jewelry for the moments that matter most. Each piece tells a story of artistry, heritage, and enduring beauty.</p>",
+            "width": "fit-content",
+            "max_width": "560px",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "loose",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "rgba(255,255,255,0.82)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 8,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
+        "eyebrow_lux",
         "text_YLPk4p",
+        "subtitle_lux",
         "button_H9gpTf"
       ],
       "name": "t:names.hero",
@@ -71,21 +125,21 @@
         "horizontal_alignment": "space-between",
         "vertical_alignment": "flex-end",
         "align_baseline": true,
-        "horizontal_alignment_flex_direction_column": "center",
+        "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "flex-end",
-        "gap": 24,
+        "gap": 16,
         "section_width": "page-width",
-        "section_height": "medium",
+        "section_height": "large",
         "section_height_custom": 50,
         "color_scheme": "scheme-6",
         "toggle_overlay": true,
-        "overlay_color": "#12121266",
+        "overlay_color": "#0a0a0a40",
         "overlay_style": "solid",
         "gradient_direction": "to bottom",
         "blurred_reflection": false,
         "reflection_opacity": 75,
-        "padding-block-start": 100,
-        "padding-block-end": 72
+        "padding-block-start": 120,
+        "padding-block-end": 80
       }
     },
     "product_list_fa6P9H": {
@@ -129,18 +183,18 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<h2>Featured Collection</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h4",
-                "font": "var(--font-body--family)",
-                "font_size": "",
+                "type_preset": "h2",
+                "font": "var(--font-heading--family)",
+                "font_size": "clamp(1.8rem, 3vw, 2.8rem)",
                 "line_height": "normal",
-                "letter_spacing": "normal",
+                "letter_spacing": "-0.01em",
                 "case": "none",
                 "wrap": "pretty",
-                "color": "var(--color-foreground)",
+                "color": "var(--color-foreground-heading)",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -155,7 +209,7 @@
               "type": "_product-list-button",
               "name": "t:names.product_list_button",
               "settings": {
-                "label": "View all",
+                "label": "View All Pieces",
                 "open_in_new_tab": false,
                 "style_class": "link",
                 "width": "fit-content",
@@ -213,10 +267,10 @@
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "font": "var(--font-heading--family)",
+                "font_size": "1.05rem",
                 "line_height": "normal",
-                "letter_spacing": "normal",
+                "letter_spacing": "-0.01em",
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
@@ -240,8 +294,8 @@
                 "type_preset": "h6",
                 "width": "100%",
                 "alignment": "left",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "font": "var(--font-heading--family)",
+                "font_size": "1.05rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
@@ -270,21 +324,182 @@
         "columns": 4,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
-        "columns_gap": 8,
-        "rows_gap": 24,
+        "columns_gap": 16,
+        "rows_gap": 32,
         "icons_style": "arrow",
         "icons_shape": "none",
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
         "gap": 28,
         "color_scheme": "scheme-1",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
+    "marquee_lux_001": {
+      "type": "marquee",
+      "blocks": {
+        "m1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Handcrafted</p>",
+            "font": "var(--font-body--family)",
+            "font_size": "0.65rem",
+            "letter_spacing": "0.2em",
+            "case": "uppercase",
+            "color": "var(--color-foreground-heading)"
+          },
+          "blocks": {}
+        },
+        "m2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>·</p>",
+            "font": "var(--font-body--family)",
+            "font_size": "0.65rem",
+            "color": "#C9A84C"
+          },
+          "blocks": {}
+        },
+        "m3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>14k &amp; 18k Gold</p>",
+            "font": "var(--font-body--family)",
+            "font_size": "0.65rem",
+            "letter_spacing": "0.2em",
+            "case": "uppercase",
+            "color": "var(--color-foreground-heading)"
+          },
+          "blocks": {}
+        },
+        "m4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>·</p>",
+            "font": "var(--font-body--family)",
+            "font_size": "0.65rem",
+            "color": "#C9A84C"
+          },
+          "blocks": {}
+        },
+        "m5": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ethically Sourced</p>",
+            "font": "var(--font-body--family)",
+            "font_size": "0.65rem",
+            "letter_spacing": "0.2em",
+            "case": "uppercase",
+            "color": "var(--color-foreground-heading)"
+          },
+          "blocks": {}
+        },
+        "m6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>·</p>",
+            "font": "var(--font-body--family)",
+            "font_size": "0.65rem",
+            "color": "#C9A84C"
+          },
+          "blocks": {}
+        },
+        "m7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lifetime Warranty</p>",
+            "font": "var(--font-body--family)",
+            "font_size": "0.65rem",
+            "letter_spacing": "0.2em",
+            "case": "uppercase",
+            "color": "var(--color-foreground-heading)"
+          },
+          "blocks": {}
+        },
+        "m8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>·</p>",
+            "font": "var(--font-body--family)",
+            "font_size": "0.65rem",
+            "color": "#C9A84C"
+          },
+          "blocks": {}
+        },
+        "m9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Free Engraving</p>",
+            "font": "var(--font-body--family)",
+            "font_size": "0.65rem",
+            "letter_spacing": "0.2em",
+            "case": "uppercase",
+            "color": "var(--color-foreground-heading)"
+          },
+          "blocks": {}
+        },
+        "m10": {
+          "type": "text",
+          "settings": {
+            "text": "<p>·</p>",
+            "font": "var(--font-body--family)",
+            "font_size": "0.65rem",
+            "color": "#C9A84C"
+          },
+          "blocks": {}
+        },
+        "m11": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Free Worldwide Shipping</p>",
+            "font": "var(--font-body--family)",
+            "font_size": "0.65rem",
+            "letter_spacing": "0.2em",
+            "case": "uppercase",
+            "color": "var(--color-foreground-heading)"
+          },
+          "blocks": {}
+        },
+        "m12": {
+          "type": "text",
+          "settings": {
+            "text": "<p>·</p>",
+            "font": "var(--font-body--family)",
+            "font_size": "0.65rem",
+            "color": "#C9A84C"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "m1",
+        "m2",
+        "m3",
+        "m4",
+        "m5",
+        "m6",
+        "m7",
+        "m8",
+        "m9",
+        "m10",
+        "m11",
+        "m12"
+      ],
+      "name": "Marquee",
+      "settings": {
+        "gap_between_elements": 32,
+        "movement_direction": "left",
+        "section_width": "full-width",
+        "color_scheme": "scheme-3",
+        "padding-block-start": 14,
+        "padding-block-end": 14
       }
     }
   },
   "order": [
     "hero_jVaWmY",
+    "marquee_lux_001",
     "product_list_fa6P9H"
   ]
 }
