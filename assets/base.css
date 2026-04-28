@@ -4212,4 +4212,203 @@ product-recommendations:has([data-has-recommendations='false']) {
     opacity: var(--atc-opacity, 1);
     translate: 0px var(--atc-destination, 0px);
   }
+
+/* ============================================================
+   LUMIÈRE LUXURY OVERRIDE — Cormorant + Montserrat / Gold
+   ============================================================ */
+
+/* Google Fonts fallback (Shopify CDN handles the primary load) */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root {
+  --lux-gold:       #C9A84C;
+  --lux-gold-dark:  #9B7A28;
+  --lux-gold-light: #E8D09A;
+  --lux-gold-bg:    #FAF6EE;
+  --lux-charcoal:   #1A1A1A;
+  --lux-mid:        #4A4A4A;
+  --lux-muted:      #7A7A7A;
+  --lux-border:     #E8D5A3;
+}
+
+/* ── Typography – force Cormorant on headings, Montserrat on body ── */
+body,
+p,
+li,
+.caption,
+.body {
+  font-family: 'Montserrat', var(--font-body-family, sans-serif);
+  letter-spacing: 0.01em;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.heading,
+.product-card__title,
+.card__heading,
+.featured-product__title,
+.hero__title,
+.section__title,
+.collection-card__title,
+.blog-post-card__title {
+  font-family: 'Cormorant Garamond', var(--font-heading-family, Georgia, serif) !important;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+
+/* Eyebrow / label text — Montserrat spaced caps */
+.section__eyebrow,
+.product-card__vendor,
+.card__vendor,
+.badge,
+.announcement-bar__message,
+.caption--large {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.15em;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* ── Gold accent on links and hover states ── */
+a:hover {
+  color: var(--lux-gold);
+}
+
+/* ── Announcement bar ── */
+.announcement-bar {
+  background: var(--lux-charcoal) !important;
+  color: #fff !important;
+}
+.announcement-bar__message {
+  color: var(--lux-gold-light) !important;
+}
+
+/* ── Header ── */
+.header {
+  border-bottom: 1px solid var(--lux-border);
+}
+.header__heading-link:hover .h2 {
+  color: var(--lux-gold);
+}
+
+/* ── Buttons ── */
+.button--primary,
+.shopify-payment-button__button--unbranded,
+button[name="checkout"] {
+  background: var(--lux-gold) !important;
+  border-color: var(--lux-gold) !important;
+  color: #fff !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 0.68rem !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  border-radius: 2px !important;
+  transition: background 200ms ease, border-color 200ms ease !important;
+}
+.button--primary:hover,
+.shopify-payment-button__button--unbranded:hover,
+button[name="checkout"]:hover {
+  background: var(--lux-gold-dark) !important;
+  border-color: var(--lux-gold-dark) !important;
+}
+
+.button--secondary {
+  border-radius: 2px !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 0.68rem !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+}
+
+/* ── Product / collection cards ── */
+.product-card__price,
+.price__regular,
+.price .money {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.product-card__vendor,
+.card__vendor {
+  color: var(--lux-gold) !important;
+}
+
+/* ── Badges (sale / new) ── */
+.badge {
+  border-radius: 2px !important;
+}
+.badge--sale {
+  background: var(--lux-gold-dark) !important;
+  color: #fff !important;
+}
+
+/* ── Form inputs ── */
+.field__input,
+.select__select,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea {
+  border-radius: 2px !important;
+  border-color: var(--lux-border) !important;
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+}
+.field__input:focus,
+.select__select:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: var(--lux-gold) !important;
+  box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.12) !important;
+  outline: none;
+}
+
+/* ── Section headings — italic gold accent ── */
+.section-header .section__title em,
+.hero__title em {
+  font-style: italic;
+  color: var(--lux-gold);
+}
+
+/* ── Marquee / ticker bar ── */
+.marquee__content {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* ── Footer ── */
+.footer__title,
+.footer-block__heading {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 0.65rem !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  color: var(--lux-gold) !important;
+}
+
+/* ── Focus rings ── */
+:focus-visible {
+  outline: 2px solid var(--lux-gold) !important;
+  outline-offset: 3px !important;
+}
+
+/* ── Scrollbar ── */
+:root {
+  scrollbar-color: var(--lux-gold) var(--lux-gold-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--lux-gold);
+}
+
 }
