@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumière — Fine Jewelry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" data-page="home">Lumière</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#home"        class="nav-link active" data-page="home">Home</a>
+        <a href="#collections" class="nav-link"        data-page="collections">Collections</a>
+        <a href="#about"       class="nav-link"        data-page="about">About</a>
+        <a href="#contact"     class="nav-link"        data-page="contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-icon" aria-label="Search" onclick="void(0)">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="nav-icon" aria-label="Cart" onclick="void(0)">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </button>
+        <button class="nav-hamburger" aria-label="Menu" id="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="#home"        class="nav-mobile-link" data-page="home">Home</a>
+      <a href="#collections" class="nav-mobile-link" data-page="collections">Collections</a>
+      <a href="#about"       class="nav-mobile-link" data-page="about">About</a>
+      <a href="#contact"     class="nav-mobile-link" data-page="contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- ===================== HOME PAGE ===================== -->
+  <main>
+
+    <section id="home" class="page active">
+
+      <!-- HERO -->
+      <div class="hero">
+        <div class="hero-bg">
+          <div class="hero-shape hero-shape-1"></div>
+          <div class="hero-shape hero-shape-2"></div>
+        </div>
+        <div class="hero-content">
+          <p class="hero-eyebrow">New Collection · Spring 2026</p>
+          <h1 class="hero-title">Where Light<br /><em>Meets Gold</em></h1>
+          <p class="hero-sub">Handcrafted fine jewelry for the moments that matter most. Each piece tells a story of artistry, heritage, and enduring beauty.</p>
+          <div class="hero-cta">
+            <a href="#collections" class="btn btn-gold" data-page="collections">Shop Collection</a>
+            <a href="#about"       class="btn btn-outline" data-page="about">Our Story</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-ring-wrap">
+            <div class="hero-ring-outer">
+              <div class="hero-ring-inner">
+                <div class="hero-gem"></div>
+              </div>
+            </div>
+            <div class="hero-ring-shadow"></div>
+          </div>
+          <div class="hero-badge">
+            <span class="hero-badge-num">14k</span>
+            <span class="hero-badge-label">Fine Gold</span>
+          </div>
+        </div>
+        <div class="hero-scroll">
+          <span>Scroll</span>
+          <svg width="16" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 16 24"><rect x="1" y="1" width="14" height="22" rx="7"/><circle cx="8" cy="8" r="2" fill="currentColor" stroke="none" class="scroll-dot"/></svg>
+        </div>
+      </div>
+
+      <!-- FEATURED CATEGORIES -->
+      <div class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Explore</p>
+            <h2 class="section-title">Shop by Category</h2>
+          </div>
+          <div class="category-grid">
+            <a href="#collections" class="category-card" data-page="collections" data-filter="rings">
+              <div class="category-img category-img-rings">
+                <div class="category-icon">
+                  <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 48 48"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="10"/><circle cx="24" cy="13" r="3" fill="currentColor" stroke="none"/></svg>
+                </div>
+              </div>
+              <div class="category-body">
+                <h3 class="category-name">Rings</h3>
+                <p class="category-count">24 pieces</p>
+              </div>
+            </a>
+            <a href="#collections" class="category-card category-card-large" data-page="collections" data-filter="necklaces">
+              <div class="category-img category-img-necklaces">
+                <div class="category-icon">
+                  <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 48 48"><path d="M10 8 C10 8 24 36 24 36 C24 36 38 8 38 8"/><circle cx="24" cy="38" r="4"/><line x1="10" y1="8" x2="38" y2="8"/></svg>
+                </div>
+              </div>
+              <div class="category-body">
+                <h3 class="category-name">Necklaces</h3>
+                <p class="category-count">31 pieces</p>
+              </div>
+            </a>
+            <a href="#collections" class="category-card" data-page="collections" data-filter="bracelets">
+              <div class="category-img category-img-bracelets">
+                <div class="category-icon">
+                  <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 48 48"><path d="M8 24 a16 16 0 1 0 32 0 a16 16 0 1 0 -32 0"/><line x1="8" y1="24" x2="12" y2="24"/></svg>
+                </div>
+              </div>
+              <div class="category-body">
+                <h3 class="category-name">Bracelets</h3>
+                <p class="category-count">18 pieces</p>
+              </div>
+            </a>
+            <a href="#collections" class="category-card" data-page="collections" data-filter="earrings">
+              <div class="category-img category-img-earrings">
+                <div class="category-icon">
+                  <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 48 48"><circle cx="24" cy="12" r="4"/><path d="M24 16 L20 32 L24 40 L28 32 Z"/></svg>
+                </div>
+              </div>
+              <div class="category-body">
+                <h3 class="category-name">Earrings</h3>
+                <p class="category-count">22 pieces</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEATURED PRODUCTS -->
+      <div class="section section-light">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Handpicked</p>
+            <h2 class="section-title">Featured Pieces</h2>
+            <p class="section-desc">Our curators' selection of the season's most coveted jewels.</p>
+          </div>
+          <div class="product-grid">
+            <div class="product-card">
+              <div class="product-img product-img-1">
+                <div class="product-overlay">
+                  <button class="btn btn-gold btn-sm" onclick="void(0)">Quick View</button>
+                </div>
+                <span class="product-badge">New</span>
+              </div>
+              <div class="product-body">
+                <p class="product-cat">Rings</p>
+                <h3 class="product-name">Soleil Diamond Solitaire</h3>
+                <div class="product-footer">
+                  <span class="product-price">$2,850</span>
+                  <button class="product-cart" aria-label="Add to cart">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-img product-img-2">
+                <div class="product-overlay">
+                  <button class="btn btn-gold btn-sm" onclick="void(0)">Quick View</button>
+                </div>
+                <span class="product-badge product-badge-sale">Sale</span>
+              </div>
+              <div class="product-body">
+                <p class="product-cat">Necklaces</p>
+                <h3 class="product-name">Luna Pearl Pendant</h3>
+                <div class="product-footer">
+                  <span class="product-price">$1,240 <s class="product-old">$1,550</s></span>
+                  <button class="product-cart" aria-label="Add to cart">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-img product-img-3">
+                <div class="product-overlay">
+                  <button class="btn btn-gold btn-sm" onclick="void(0)">Quick View</button>
+                </div>
+              </div>
+              <div class="product-body">
+                <p class="product-cat">Bracelets</p>
+                <h3 class="product-name">Étoile Gold Chain</h3>
+                <div class="product-footer">
+                  <span class="product-price">$980</span>
+                  <button class="product-cart" aria-label="Add to cart">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-cta">
+            <a href="#collections" class="btn btn-outline" data-page="collections">View All Pieces</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MARQUEE -->
+      <div class="marquee-bar">
+        <div class="marquee-track">
+          <span>Handcrafted</span><span class="marquee-dot"></span>
+          <span>14k &amp; 18k Gold</span><span class="marquee-dot"></span>
+          <span>Ethically Sourced</span><span class="marquee-dot"></span>
+          <span>Lifetime Warranty</span><span class="marquee-dot"></span>
+          <span>Free Engraving</span><span class="marquee-dot"></span>
+          <span>Complimentary Shipping</span><span class="marquee-dot"></span>
+          <span>Handcrafted</span><span class="marquee-dot"></span>
+          <span>14k &amp; 18k Gold</span><span class="marquee-dot"></span>
+          <span>Ethically Sourced</span><span class="marquee-dot"></span>
+          <span>Lifetime Warranty</span><span class="marquee-dot"></span>
+          <span>Free Engraving</span><span class="marquee-dot"></span>
+          <span>Complimentary Shipping</span><span class="marquee-dot"></span>
+        </div>
+      </div>
+
+      <!-- TRUST STRIP -->
+      <div class="section">
+        <div class="container">
+          <div class="trust-grid">
+            <div class="trust-item">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <h4>Lifetime Warranty</h4>
+              <p>Every piece backed by our promise of lasting quality.</p>
+            </div>
+            <div class="trust-item">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              <h4>Free Shipping</h4>
+              <p>Complimentary worldwide shipping on all orders.</p>
+            </div>
+            <div class="trust-item">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              <h4>Free Engraving</h4>
+              <p>Personalise your jewel with a message or date.</p>
+            </div>
+            <div class="trust-item">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <h4>30-Day Returns</h4>
+              <p>Not in love? Return it within 30 days, no questions asked.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TESTIMONIAL -->
+      <div class="section section-dark">
+        <div class="container container-narrow">
+          <div class="section-header">
+            <p class="section-eyebrow light">What They Say</p>
+            <h2 class="section-title light">Stories of Joy</h2>
+          </div>
+          <div class="testimonial-grid">
+            <blockquote class="testimonial">
+              <div class="testimonial-stars">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <p class="testimonial-text">"The engagement ring from Lumière is breathtaking. The craftsmanship is unparalleled and my fiancée cried when she saw it. Worth every penny."</p>
+              <footer class="testimonial-author">— Sophie L., Paris</footer>
+            </blockquote>
+            <blockquote class="testimonial">
+              <div class="testimonial-stars">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <p class="testimonial-text">"I've purchased three pieces over the years — a pendant, earrings, and now a bracelet. The quality is consistent and the packaging is exquisite. Lumière is my go-to for gifts."</p>
+              <footer class="testimonial-author">— James T., London</footer>
+            </blockquote>
+            <blockquote class="testimonial">
+              <div class="testimonial-stars">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <p class="testimonial-text">"Ordered the Luna Pearl Pendant as a birthday gift. The free engraving made it so personal. She hasn't taken it off since."</p>
+              <footer class="testimonial-author">— Camille R., New York</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ===================== COLLECTIONS PAGE ===================== -->
+    <section id="collections" class="page">
+      <div class="page-hero">
+        <div class="container">
+          <p class="section-eyebrow">Our Atelier</p>
+          <h1 class="page-title">Collections</h1>
+          <p class="page-subtitle">Discover every piece in our curated fine jewelry archive.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+
+          <!-- FILTER BAR -->
+          <div class="filter-bar" role="group" aria-label="Filter by category">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="rings">Rings</button>
+            <button class="filter-btn" data-filter="necklaces">Necklaces</button>
+            <button class="filter-btn" data-filter="bracelets">Bracelets</button>
+            <button class="filter-btn" data-filter="earrings">Earrings</button>
+          </div>
+
+          <!-- PRODUCT GRID -->
+          <div class="product-grid product-grid-large" id="shop-grid">
+
+            <div class="product-card" data-cat="rings">
+              <div class="product-img product-img-1">
+                <div class="product-overlay"><button class="btn btn-gold btn-sm">Quick View</button></div>
+                <span class="product-badge">New</span>
+              </div>
+              <div class="product-body">
+                <p class="product-cat">Rings</p>
+                <h3 class="product-name">Soleil Diamond Solitaire</h3>
+                <p class="product-desc">Round brilliant diamond set in 18k yellow gold. 0.85ct. F/VS1.</p>
+                <div class="product-footer">
+                  <span class="product-price">$2,850</span>
+                  <button class="product-cart" aria-label="Add to cart">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card" data-cat="necklaces">
+              <div class="product-img product-img-2">
+                <div class="product-overlay"><button class="btn btn-gold btn-sm">Quick View</button></div>
+                <span class="product-badge product-badge-sale">Sale</span>
+              </div>
+              <div class="product-body">
+                <p class="product-cat">Necklaces</p>
+                <h3 class="product-name">Luna Pearl Pendant</h3>
+                <p class="product-desc">South Sea pearl on a delicate 14k gold chain. 45cm.</p>
+                <div class="product-footer">
+                  <span class="product-price">$1,240 <s class="product-old">$1,550</s></span>
+                  <button class="product-cart" aria-label="Add to cart">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card" data-cat="bracelets">
+              <div class="product-img product-img-3">
+                <div class="product-overlay"><button class="btn btn-gold btn-sm">Quick View</button></div>
+              </div>
+              <div class="product-body">
+                <p class="product-cat">Bracelets</p>
+                <h3 class="product-name">Étoile Gold Chain</h3>
+                <p class="product-desc">Fine cable chain bracelet in 14k gold. Adjustable 16–19cm.</p>
+                <div class="product-footer">
+                  <span class="product-price">$980</span>
+                  <button class="product-cart" aria-label="Add to cart">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card" data-cat="earrings">
+              <div class="product-img product-img-4">
+                <div class="product-overlay"><button class="btn btn-gold btn-sm">Quick View</button></div>
+                <span class="product-badge">New</span>
+              </div>
+              <div class="product-body">
+                <p class="product-cat">Earrings</p>
+                <h3 class="product-name">Aurora Drop Earrings</h3>
+                <p class="product-desc">Marquise sapphires suspended in 18k gold. 3.5cm drop.</p>
+                <div class="product-footer">
+                  <span class="product-price">$1,680</span>
+                  <button class="product-cart" aria-label="Add to cart">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card" data-cat="rings">
+              <div class="product-img product-img-5">
+                <div class="product-overlay"><button class="btn btn-gold btn-sm">Quick View</button></div>
+              </div>
+              <div class="product-body">
+                <p class="product-cat">Rings</p>
+                <h3 class="product-name">Pavé Eternity Band</h3>
+                <p class="product-desc">Full pavé diamond band in 18k white gold. 1.2ctw total.</p>
+                <div class="product-footer">
+                  <span class="product-price">$3,400</span>
+                  <button class="product-cart" aria-label="Add to cart">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card" data-cat="necklaces">
+              <div class="product-img product-img-6">
+                <div class="product-overlay"><button class="btn btn-gold btn-sm">Quick View</button></div>
+              </div>
+              <div class="product-body">
+                <p class="product-cat">Necklaces</p>
+                <h3 class="product-name">Cœur Lariat</h3>
+                <p class="product-desc">Delicate lariat necklace with pavé heart charm. 14k gold.</p>
+                <div class="product-footer">
+                  <span class="product-price">$760</span>
+                  <button class="product-cart" aria-label="Add to cart">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card" data-cat="bracelets">
+              <div class="product-img product-img-7">
+                <div class="product-overlay"><button class="btn btn-gold btn-sm">Quick View</button></div>
+                <span class="product-badge product-badge-sale">Sale</span>
+              </div>
+              <div class="product-body">
+                <p class="product-cat">Bracelets</p>
+                <h3 class="product-name">Rivière Tennis Bracelet</h3>
+                <p class="product-desc">Classic prong-set diamond tennis bracelet. 14k white gold. 2ctw.</p>
+                <div class="product-footer">
+                  <span class="product-price">$4,200 <s class="product-old">$5,000</s></span>
+                  <button class="product-cart" aria-label="Add to cart">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card" data-cat="earrings">
+              <div class="product-img product-img-8">
+                <div class="product-overlay"><button class="btn btn-gold btn-sm">Quick View</button></div>
+              </div>
+              <div class="product-body">
+                <p class="product-cat">Earrings</p>
+                <h3 class="product-name">Céleste Stud Earrings</h3>
+                <p class="product-desc">Round brilliant diamond studs in 14k yellow gold. 0.5ctw.</p>
+                <div class="product-footer">
+                  <span class="product-price">$1,100</span>
+                  <button class="product-cart" aria-label="Add to cart">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT PAGE ===================== -->
+    <section id="about" class="page">
+      <div class="page-hero">
+        <div class="container">
+          <p class="section-eyebrow">Our Story</p>
+          <h1 class="page-title">Crafted with Purpose</h1>
+          <p class="page-subtitle">A heritage of fine jewelry, a commitment to the future.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <div class="about-intro">
+            <div class="about-text">
+              <h2 class="about-heading">Founded on Beauty,<br /><em>Sustained by Craft</em></h2>
+              <p>Lumière was born in Paris in 1994 from a single belief: that jewelry should be as enduring as the love it represents. Our founder, Isabelle Marchand, trained under master goldsmiths in the Marais district before opening her first atelier on the Rue du Faubourg Saint-Honoré.</p>
+              <p>Three decades later, every Lumière piece is still handcrafted in our Paris studio using the same traditional techniques — wax carving, hand-setting, and meticulous finishing — combined with the finest ethically sourced gemstones from around the world.</p>
+              <p>We believe in slow jewelry. In buying less, but buying beautifully. In pieces that are passed down through generations rather than discarded with seasons.</p>
+            </div>
+            <div class="about-visual">
+              <div class="about-img-wrap">
+                <div class="about-img-main">
+                  <div class="about-img-placeholder">
+                    <svg width="80" height="80" fill="none" stroke="#C9A84C" stroke-width="0.8" viewBox="0 0 48 48" opacity="0.4"><circle cx="24" cy="24" r="18"/><circle cx="24" cy="24" r="12"/><circle cx="24" cy="10" r="4" fill="#C9A84C" stroke="none"/><circle cx="38" cy="19" r="3" fill="#C9A84C" stroke="none"/><circle cx="38" cy="29" r="3" fill="#C9A84C" stroke="none"/></svg>
+                  </div>
+                </div>
+                <div class="about-img-accent">
+                  <span class="about-year">Est. 1994</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section section-light">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Our Pillars</p>
+            <h2 class="section-title">What We Stand For</h2>
+          </div>
+          <div class="values-grid">
+            <div class="value-item">
+              <div class="value-icon">
+                <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.3" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h3>Ethical Sourcing</h3>
+              <p>Every gemstone is conflict-free and traceable. We partner only with mines and suppliers who meet the highest ethical and environmental standards.</p>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">
+                <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.3" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <h3>Master Craftsmanship</h3>
+              <p>Our artisans spend years mastering traditional goldsmithing techniques. Each piece passes through more than forty pairs of hands before it reaches yours.</p>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">
+                <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <h3>Timeless Design</h3>
+              <p>We reject seasonal trends in favour of designs that will be cherished for a lifetime — and beyond. Classic proportions, refined silhouettes, lasting beauty.</p>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">
+                <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.3" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+              </div>
+              <h3>Sustainable Practice</h3>
+              <p>We use recycled gold in our settings, minimize waste through precision casting, and offset all carbon emissions from shipping.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEAM / ATELIER -->
+      <div class="section">
+        <div class="container container-narrow">
+          <div class="section-header">
+            <p class="section-eyebrow">The Atelier</p>
+            <h2 class="section-title">The Hands Behind the Jewels</h2>
+            <p class="section-desc">Our team of twelve master craftspeople bring decades of collective experience to every single piece.</p>
+          </div>
+          <div class="atelier-strip">
+            <div class="atelier-stat">
+              <span class="atelier-num">30+</span>
+              <span class="atelier-label">Years of Excellence</span>
+            </div>
+            <div class="atelier-divider"></div>
+            <div class="atelier-stat">
+              <span class="atelier-num">12</span>
+              <span class="atelier-label">Master Artisans</span>
+            </div>
+            <div class="atelier-divider"></div>
+            <div class="atelier-stat">
+              <span class="atelier-num">4,200+</span>
+              <span class="atelier-label">Pieces Created</span>
+            </div>
+            <div class="atelier-divider"></div>
+            <div class="atelier-stat">
+              <span class="atelier-num">60+</span>
+              <span class="atelier-label">Countries Served</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ===================== CONTACT PAGE ===================== -->
+    <section id="contact" class="page">
+      <div class="page-hero">
+        <div class="container">
+          <p class="section-eyebrow">Get in Touch</p>
+          <h1 class="page-title">We'd Love to Hear<br /><em>From You</em></h1>
+          <p class="page-subtitle">Whether you have a question, need a bespoke piece, or simply want to say hello — our team is here.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <div class="contact-layout">
+
+            <!-- FORM -->
+            <div class="contact-form-wrap">
+              <h2 class="contact-form-title">Send a Message</h2>
+              <form class="contact-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first_name" placeholder="Isabelle" autocomplete="given-name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last_name" placeholder="Marchand" autocomplete="family-name" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <select id="subject" name="subject">
+                    <option value="">Select a topic…</option>
+                    <option>Product Enquiry</option>
+                    <option>Bespoke / Custom Order</option>
+                    <option>Order Status</option>
+                    <option>Returns &amp; Repairs</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help…"></textarea>
+                </div>
+                <button type="submit" class="btn btn-gold btn-full">Send Message</button>
+                <p class="form-note">We respond within one business day.</p>
+              </form>
+            </div>
+
+            <!-- INFO -->
+            <aside class="contact-info">
+              <div class="contact-info-block">
+                <h3 class="contact-info-title">Visit Our Atelier</h3>
+                <p>12 Rue du Faubourg Saint-Honoré<br />Paris, 75008, France</p>
+                <p class="contact-hours">Monday – Saturday: 10:00 – 19:00<br />Sunday: Closed</p>
+              </div>
+              <div class="contact-info-block">
+                <h3 class="contact-info-title">Reach Us Directly</h3>
+                <p><a href="mailto:hello@lumiere-jewelry.com">hello@lumiere-jewelry.com</a></p>
+                <p><a href="tel:+33142661234">+33 1 42 66 12 34</a></p>
+              </div>
+              <div class="contact-info-block">
+                <h3 class="contact-info-title">Follow Along</h3>
+                <div class="contact-social">
+                  <a href="#" class="social-link" aria-label="Instagram">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    Instagram
+                  </a>
+                  <a href="#" class="social-link" aria-label="Pinterest">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83.18-.77 1.22-5.15 1.22-5.15s-.31-.62-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .9-.57 2.24-.87 3.48-.25 1.04.52 1.88 1.54 1.88 1.85 0 3.1-2.37 3.1-5.16 0-2.13-1.43-3.62-3.48-3.62-2.37 0-3.76 1.78-3.76 3.62 0 .72.28 1.48.62 1.9.07.08.08.16.06.24l-.23.95c-.04.15-.13.18-.29.11-1.07-.5-1.74-2.05-1.74-3.3 0-2.69 1.95-5.16 5.63-5.16 2.95 0 5.25 2.1 5.25 4.91 0 2.93-1.85 5.29-4.41 5.29-.86 0-1.67-.45-1.95-.97l-.53 1.98c-.19.74-.71 1.67-1.06 2.23.8.25 1.64.38 2.52.38 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+                    Pinterest
+                  </a>
+                  <a href="#" class="social-link" aria-label="Facebook">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    Facebook
+                  </a>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="newsletter-wrap">
+          <div class="newsletter-text">
+            <h3>Join the Inner Circle</h3>
+            <p>Be the first to discover new collections, private events, and exclusive offers.</p>
+          </div>
+          <form class="newsletter-form" novalidate>
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <input type="email" id="newsletter-email" name="email" placeholder="Your email address" autocomplete="email" />
+            <button type="submit" class="btn btn-gold">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <p class="footer-logo">Lumière</p>
+            <p class="footer-tagline">Fine jewelry, handcrafted in Paris since 1994.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Instagram" class="footer-social-icon">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" aria-label="Pinterest" class="footer-social-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83.18-.77 1.22-5.15 1.22-5.15s-.31-.62-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .9-.57 2.24-.87 3.48-.25 1.04.52 1.88 1.54 1.88 1.85 0 3.1-2.37 3.1-5.16 0-2.13-1.43-3.62-3.48-3.62-2.37 0-3.76 1.78-3.76 3.62 0 .72.28 1.48.62 1.9.07.08.08.16.06.24l-.23.95c-.04.15-.13.18-.29.11-1.07-.5-1.74-2.05-1.74-3.3 0-2.69 1.95-5.16 5.63-5.16 2.95 0 5.25 2.1 5.25 4.91 0 2.93-1.85 5.29-4.41 5.29-.86 0-1.67-.45-1.95-.97l-.53 1.98c-.19.74-.71 1.67-1.06 2.23.8.25 1.64.38 2.52.38 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+              </a>
+              <a href="#" aria-label="Facebook" class="footer-social-icon">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Shop</h4>
+            <ul class="footer-links">
+              <li><a href="#collections" data-page="collections" data-filter="rings">Rings</a></li>
+              <li><a href="#collections" data-page="collections" data-filter="necklaces">Necklaces</a></li>
+              <li><a href="#collections" data-page="collections" data-filter="bracelets">Bracelets</a></li>
+              <li><a href="#collections" data-page="collections" data-filter="earrings">Earrings</a></li>
+              <li><a href="#collections" data-page="collections">New Arrivals</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Company</h4>
+            <ul class="footer-links">
+              <li><a href="#about" data-page="about">Our Story</a></li>
+              <li><a href="#about" data-page="about">Craftsmanship</a></li>
+              <li><a href="#about" data-page="about">Sustainability</a></li>
+              <li><a href="#contact" data-page="contact">Careers</a></li>
+              <li><a href="#contact" data-page="contact">Press</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Help</h4>
+            <ul class="footer-links">
+              <li><a href="#contact" data-page="contact">Contact Us</a></li>
+              <li><a href="#contact" data-page="contact">Shipping Info</a></li>
+              <li><a href="#contact" data-page="contact">Returns</a></li>
+              <li><a href="#contact" data-page="contact">Ring Sizing</a></li>
+              <li><a href="#contact" data-page="contact">Care Guide</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copy">&copy; 2026 Lumière Fine Jewelry. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
